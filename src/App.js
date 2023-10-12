@@ -46,7 +46,7 @@ function App() {
     },
     body: JSON.stringify({
       height: 1024,
-      prompt: 'selfie picture style, old, wise, angry and dark futuristic cyberpirate, carribean beach, pink violet rosa venom green neonlights, at moonlight night, tropical carribean island, ultra detailed, photorealistic, professional illumination, 8k textures, fine tune, mantain proportions, masterpiece, cyberpunk pirate style, realistic textures, unreal 5 rendered, raytraced,',
+      prompt: 'selfie picture style, angry and dark futuristic cyberpirate, carribean beach, pink violet rosa venom green neonlights, at moonlight night, tropical carribean island, ultra detailed, photorealistic, professional illumination, 8k textures, fine tune, mantain proportions, masterpiece, cyberpunk pirate style, realistic textures, unreal 5 rendered, raytraced,',
       width: 768,
       controlNet: false,
       expandedDomain: true,
