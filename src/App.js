@@ -130,15 +130,15 @@ function App() {
     }
   };
 
-  useEffect(() => {
-    // const loadingMessageInterval = setInterval(() => {
-    //   setLoadingMessage(getRandomLoadingMessage());
-    // }, 3000);
+  // useEffect(() => {
+  //   // const loadingMessageInterval = setInterval(() => {
+  //   //   setLoadingMessage(getRandomLoadingMessage());
+  //   // }, 3000);
 
-    return () => {
-      clearInterval(loadingMessageInterval);
-    };
-  }, []);
+  //   return () => {
+  //     clearInterval(loadingMessageInterval);
+  //   };
+  // }, []);
 
   return (
     <div className='section'>
@@ -180,7 +180,7 @@ function App() {
               {isLoading ? (
                 <div className="loader-container">
                   <div className="loader"></div>
-                  <p className="loading-message">{loadingMessage}</p>
+                  {/* <p className="loading-message">{loadingMessage}</p> */}
                 </div>
               ) : generatedImageURL && (
                 <div>
