@@ -176,7 +176,7 @@ function Test() {
                                 value={userPreferences.gender}
                                 onChange={(e) => handleSliderChange(e, 'gender')}
                             />
-                            <input className='promptText' type='text' value={value} onChange={(e) => { setValue(e.target.value) }}></input>
+                            <textarea rows="5" placeholder='Write prompt that you want here' className='promptText' type='text' value={value} onChange={(e) => { setValue(e.target.value) }}></textarea>
                             <br />
                             <button onClick={generateImg}>Generate</button>
                         </div>
