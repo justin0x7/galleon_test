@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 import './App.css';
 
 function App() {
-  const [generatedImageID, setGeneratedImageID] = useState(null);
+  // const [generatedImageID, setGeneratedImageID] = useState(null);
   const [generatedImageURL, setGeneratedImageURL] = useState(null);
   const [isLoading, setIsLoading] = useState(false); // State to track loading
   const [loadingMessage, setLoadingMessage] = useState(''); // Initialize with an empty message
