@@ -6,25 +6,25 @@ function App() {
   // const [generatedImageID, setGeneratedImageID] = useState(null);
   const [generatedImageURL, setGeneratedImageURL] = useState(null);
   const [isLoading, setIsLoading] = useState(false); // State to track loading
-  const [loadingMessage, setLoadingMessage] = useState(''); // Initialize with an empty message
+  // const [loadingMessage, setLoadingMessage] = useState(''); // Initialize with an empty message
   const [userPreferences, setUserPreferences] = useState({
     gender: 50, // Initialize to the middle value
     style: 50,
     equipment: 50,
   });
 
-  const loadingMessages = [
-    "Searching for buried treasure...",
-    "Calibrating the quantum compass...",
-    "Contacting Blackbeard...",
-    "Adjusting the cyber cannons...",
-    "Checking the pirate code...",
-  ];
+  // const loadingMessages = [
+  //   "Searching for buried treasure...",
+  //   "Calibrating the quantum compass...",
+  //   "Contacting Blackbeard...",
+  //   "Adjusting the cyber cannons...",
+  //   "Checking the pirate code...",
+  // ];
 
-  const getRandomLoadingMessage = () => {
-    const randomIndex = Math.floor(Math.random() * loadingMessages.length);
-    return loadingMessages[randomIndex];
-  };
+  // const getRandomLoadingMessage = () => {
+  //   const randomIndex = Math.floor(Math.random() * loadingMessages.length);
+  //   return loadingMessages[randomIndex];
+  // };
 
   const handleSliderChange = (event, preference) => {
     const newValue = event.target.value;
@@ -131,9 +131,9 @@ function App() {
   };
 
   useEffect(() => {
-    const loadingMessageInterval = setInterval(() => {
-      setLoadingMessage(getRandomLoadingMessage());
-    }, 3000);
+    // const loadingMessageInterval = setInterval(() => {
+    //   setLoadingMessage(getRandomLoadingMessage());
+    // }, 3000);
 
     return () => {
       clearInterval(loadingMessageInterval);
